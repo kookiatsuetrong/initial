@@ -1,8 +1,36 @@
-<form method='post'>
-	<input name='email' placeholder='Your Email'
-		type='email' autofocus><br>
-	<input name='password' type='password' placeholder='Your Password'><br>
-	<input name='first-name' placeholder='Your First Name'><br>
-	<input name='last-name' placeholder='Your Last Name'><br>
-	<button>Register</button>
-</form>
+<!doctype html>
+<html>
+	<head>
+		<link rel='stylesheet' href='/bootstrap.min.css'>
+	</head>
+	<body>
+		<div class='container'>
+			<form method='post'>
+				<input name='email'
+					placeholder='Your Email'
+					type='email'
+					autofocus
+					class='form-control'>
+				<input name='password'
+					type='password'
+					placeholder='Your Password'
+					class='form-control'>
+				<input name='first-name'
+					placeholder='Your First Name'
+					class='form-control'>
+				<input name='last-name'
+					placeholder='Your Last Name'
+					class='form-control'>
+				<button class='btn btn-primary'>Register</button>
+			</form>
+			<style>
+				form {
+					max-width: 320px;
+				}
+				form > * {
+					margin-top: .5rem;
+				}
+			</style>
+		</div>
+	</body>
+</html>
