@@ -1,6 +1,10 @@
-
-<%  for (var i in data) { %>
-		<a href='/post-detail?post=<%= data[i].code %>'>
-			<%= data[i].topic %>
-		</a><br>
-<%  } %>
+<%- include('header.html') %>
+<main class='container'>
+	<h3>All Posts</h3>
+	<%  for (var i in data) { %>
+			<a href='/post-detail?post=<%= data[i].code %>'>
+				<%= data[i].topic %>
+			</a><br>
+	<%  } %>
+</main>
+<%- include('footer.html') %>

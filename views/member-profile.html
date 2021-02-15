@@ -1,7 +1,12 @@
-Hello <%= member.first_name %>
+<%- include('header.html') %>
+<main class='container'>
+	<h3>
+	Hello <%= member.first_name %>
+	</h3>
 
-
-<br>
-<a href='/member-logout'>Log Out</a> | 
-<a href='/post-add'>Add Post</a> | 
-<a href='/post-list'>View All Post</a>
+	<br />
+	<a href='/member-logout'>Log Out</a> | 
+	<a href='/post-add'>Add Post</a> | 
+	<a href='/post-list'>View All Post</a>
+</main>
+<%- include('footer.html') %>

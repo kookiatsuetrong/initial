@@ -1,6 +1,17 @@
-<form method='post'>
-	<input name='email' placeholder='Your Email'
-		type='email' autofocus><br>
-	<input name='password' type='password' placeholder='Your Password'><br>
-	<button>Register</button>
-</form>
+<%- include('header.html') %>
+<main class='container'>
+	<form method='post'>
+		<input name='email'
+			placeholder='Your Email'
+			type='email' autofocus
+			class='form-control'
+			pattern='^(.+)@(.+)$'>
+		<input name='password'
+			type='password'
+			placeholder='Your Password'
+			class='form-control'
+			pattern='^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,99}$'>
+		<button class='btn btn-primary'>Log In</button>
+	</form>
+</main>
+<%- include('footer.html') %>

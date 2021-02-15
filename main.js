@@ -182,6 +182,29 @@ function showAllPost(request, response) {
 	})
 }
 
+function isValidEmail(email) {
+	var pattern = "^(.+)@(.+)$"
+	var rex     = new RegExp(pattern)
+	return rex.test(email)
+}
+
+function isValidPassword(password) {
+	var pattern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,99}$"
+	var rex     = new RegExp(pattern)
+	return rex.test(password)
+}
+
+function isValidFirstName(name) {
+	var pattern = "^.{2,99}$"
+	var rex     = new RegExp(pattern)
+	return rex.test(name)
+}
+
+function isValidLastName(name) {
+	var pattern = "^.{2,99}$"
+	var rex     = new RegExp(pattern)
+	return rex.test(name)
+}
 
 
 

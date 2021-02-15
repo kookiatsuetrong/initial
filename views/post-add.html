@@ -1,8 +1,16 @@
-<form method='post'>
-	<input name='topic'
-		autofocus><br>
-	<textarea name='detail' rows='4'
-	></textarea>
-	<br>
-	<button>Send</button>
-</form>
+<%- include('header.html') %>
+<main class='container'>
+	<form method='post'>
+		<input name='topic'
+			autofocus
+			placeholder='Topic'
+			class='form-control'>
+		<textarea name='detail'
+			rows='4'
+			placeholder='Detail'
+			class='form-control'
+			></textarea>
+		<button class='btn btn-primary'>Send</button>
+	</form>
+</main>
+<%- include('footer.html') %>
